@@ -1,7 +1,11 @@
-import PropTypes from 'prop-types';
+import React from "react";
 
-export const Notification = ({ message }) => <p>{message}</p>;
-
-Notification.prpopTypes = {
-  message: PropTypes.string.isRequired,
+const Notification = ({ message }) => {
+  return (
+    <>
+      <p>{message}</p>
+    </>
+  );
 };
+
+export default Notification;
